@@ -39,10 +39,12 @@ $ docker-compose up -d
 $ docker-compose exec node npx create-nuxt-app <project-name>
 ```
 
-Comment out Dockerfile:
+Change Dockerfile:
 
 ```./docker/node/Dockerfile
 ...
+WORKDIR /src/app/<project-name>
+
 # install packages.
 RUN npm install
 
