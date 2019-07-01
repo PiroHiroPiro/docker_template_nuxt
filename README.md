@@ -35,6 +35,7 @@ $ docker-compose build
 Create new Nuxt.js application:
 
 ```console
+$ docker-compose up -d
 $ docker-compose exec node npx create-nuxt-app <project-name>
 ```
 
@@ -47,6 +48,18 @@ RUN npm install
 
 EXPOSE 3000
 CMD ["npm", "run", "dev"]
+```
+
+Stop docker container:
+
+```console
+$ docker-compose down
+```
+
+Rebuild docker image:
+
+```console
+$ docker-compose build
 ```
 
 ## Licence
