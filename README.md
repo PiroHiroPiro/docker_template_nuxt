@@ -36,6 +36,7 @@ Create new Nuxt.js application:
 
 ```console
 $ docker-compose up -d
+$ docker-compose exec node npm install create-nuxt-app
 $ docker-compose exec node npx create-nuxt-app <project-name>
 ```
 
